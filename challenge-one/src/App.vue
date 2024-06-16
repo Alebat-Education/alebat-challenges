@@ -1,12 +1,7 @@
-<script setup lang="ts">
-import items from './data/items.json'
-import arrayItems from './components/arrayItems/arrayItems.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <section class="home">
-    <arrayItems :items="items" />
-  </section>
+  <router-view></router-view>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>

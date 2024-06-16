@@ -1,0 +1,138 @@
+/* reset.css */
+
+/* Elimina los márgenes por defecto */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Configura los tamaños de fuente y el line-height */
+html {
+  font-size: 100%; /* 1em = 16px */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Configura estilos base para el cuerpo */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+  color: #3dd68c;
+  background-color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elimina decoraciones y estilos base en enlaces */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Configura listas sin márgenes ni padding */
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configura tablas sin bordes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Configura campos de formularios */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Quita los bordes en imágenes y SVGs en IE */
+img,
+svg {
+  border-style: none;
+}
+
+/* Quita decoraciones y cambios en contorno en enlaces en IE */
+a {
+  -webkit-text-decoration-skip: objects;
+}
+
+/* Elimina sombras en formularios */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Configura botones */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Configura imágenes como elementos responsivos */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Configura iframe y video */
+iframe,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Configura detalles */
+details {
+  display: block;
+}
+
+/* Configura elementos HTML5 como display:block por defecto */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figure,
+figcaption {
+  display: block;
+}
+
+/* Quita padding en fieldsets */
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* Quita bordes en iframe */
+iframe {
+  border: 0;
+}
