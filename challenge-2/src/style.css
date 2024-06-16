@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  --success: #29bf12;
+  --error: #d00000;
+  --info: #0077cc;
+  --warning: #ffcc00;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  max-height: 100dvh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #1A1A1A;
+}
+input, button, textarea, select{
+  font: inherit;
+}
+p{
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6{
+  text-wrap: balance;
+}
+img, video, svg{
+  height: auto;
+  max-width: 100%;
+}
+
+#app{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  place-content: center;
+  padding: 0 4rem;
+  position: relative;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:nth-child(1) {
+  background-color: var(--success);
+}
+button:nth-child(2) {
+  background-color: var(--error);
+}
+button:nth-child(3) {
+  background-color: var(--info);
+}
+button:nth-child(4) {
+  background-color: var(--warning);
+}
+
+#toast-container {
+  inset: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  place-content: end;
+  padding: 1rem;
+  z-index: 1000;
+  overflow: hidden;
+  max-height: 100dvh;
+}
+
+.notification {
+  position: relative;
+  margin: auto;
+  height: fit-content;
+  width: 17rem;
+  border: none;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.2rem;
+  place-content: center;
+  padding: 1.5rem 2rem;
+}
